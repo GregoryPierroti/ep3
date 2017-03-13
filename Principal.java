@@ -1,22 +1,26 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class Principal{
 	public static void main(String[] args){		
-		ArrayList<Aluno> aluno = new ArrayList();
-		aluno a1=new Aluno();
-		aluno a2=new Aluno();
-		aluno a3=new Aluno();
-		aluno a4=new Aluno();
-		aluno a5= new Aluno();
+		ArrayList<Aluno> lista = new ArrayList() <Aluno> ;
+		lista.add(new Aluno("Felifish", 33));
+		lista.add(new Aluno("Victryo3", 12));
+		lista.add(new Aluno("Pafth", 16));
+		lista.add(new Aluno("Greguinest", 17));
+		lista.add(new Aluno("Johnizinho", 18));
 		
-		a1.setNome("Felipe");
-		a1.setIdade(28);
-		a2.setNome("Victor");
-		a2.setIdade(12);
-		a3.setNome("Caio");
-		a3.setIdade(16);
-		a4.setNome("Grégory");
-		a4.setIdade(17);
-		a5.setNome("João Paulo")
-		a5.setIdade(18);
+		for(int i = 0; i < 5; i++)
+                {
+                        System.out.println(lista.get(i).getIdade() +"--"+ lista.get(i).getNome());
+                }
+
+
+		Collections.sort(lista);
+		for(int i = 0; i < 5; i++)
+                {
+                        System.out.println(lista.get(i).getIdade() +"--"+ lista.get(i).getNome());
+                }
 		
 	}
 }
