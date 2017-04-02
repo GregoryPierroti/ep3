@@ -7,7 +7,7 @@ public class Principal{
 		lista.add(new Aluno("Felifish", 33));
 		lista.add(new Aluno("Victryo3", 12));
 		lista.add(new Aluno("Pafth", 16));
-		lista.add(new Aluno("Greguinest", 17));
+		lista.add(new Aluno("Greguin", 17));
 		lista.add(new Aluno("Johnizinho", 18));
 		
 		for(int i = 0; i < 5; i++)
