@@ -1,0 +1,14 @@
+public class Disciplina{
+	private String nomedis;
+	private String professor;
+	public Disciplina(String nomedis, String professor){
+		this.nomedis = nomedis;
+		this.professor = professor;
+	}
+	public String getNomedis(){
+		return this.nomedis;
+	}
+	public String getProfessor(){
+		return this.professor;
+	}
+}
