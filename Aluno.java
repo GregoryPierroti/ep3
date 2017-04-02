@@ -1,4 +1,4 @@
-public class Aluno implements Comparable<Aluno>{
+public class Aluno{
 	String nome;
 	int idade;
 	
@@ -13,12 +13,4 @@ public class Aluno implements Comparable<Aluno>{
         public int getIdade(){
                 return this.idade;
         }
-	public int compareTo(Aluno outro){
-		if(this.idade < outro.getIdade())
-			return 1;
-		else if(this.idade > outro.getIdade())
-			return -1;
-		else
-			return 0;
-	}
 }
