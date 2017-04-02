@@ -1,0 +1,27 @@
+public class Nota implements Comparable<Nota>{
+	private double valornota;
+	private Aluno aluno;
+	private Disciplina disciplina;
+	public Nota(double valornota, Aluno aluno, Disciplina disciplina){
+		this.valornota = valornota;
+		this.aluno = aluno;
+		this.disciplina = disciplina;
+	}
+	public double getValornota(){
+		return this.valornota;
+	}
+	public Disciplina getDisciplina(){
+		return this.disciplina;
+	}
+  public Aluno getAluno(){
+		return this.aluno;
+	}
+  public int compareTo(Nota outra){
+	  if(this.valornota < outra.getValornota())
+			return 1;
+		else if(this.valornota > outra.getValornota())
+			return -1;
+		else
+			return 0;
+	}
+}
