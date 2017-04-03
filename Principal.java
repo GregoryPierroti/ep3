@@ -30,10 +30,10 @@ public class Principal{
                         System.out.println("Aluno: "+notas.get(i).getAluno().getNome() +" Disciplina: "+ notas.get(i).getDisciplina().getNome() +"nota: "+ notas.get(i).getNota() + " Professor: " + notas.get(i).getDisciplina().getProfessor());
                 }
 		System.out.println("A maior nota foi: " + notas.get(0).getNota());
-		int i = 0;
-		while( notas.get(i).getDisciplina().getNome() != "Lp2"){
-			i++;
-			System.out.println("A maior nota de lp2 foi: " + notas.get(i).getNota());
+		int j = 0;
+		while( notas.get(j).getDisciplina().getNome() != "Lp2"){
+			j++;
+			System.out.println("A maior nota de lp2 foi: " + notas.get(j).getNota());
 		}
 		
 	}
